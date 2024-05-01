@@ -40,3 +40,9 @@ export class Api {
         }).then(this.handleResponse);
     }
 }
+
+export class ShopAPI extends Api {
+    getCatalog() {
+        return this.get('/product');
+    }
+}
